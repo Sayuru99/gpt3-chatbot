@@ -5,13 +5,12 @@ import os
 import openai
 
 load_dotenv()
-open.api_key = os.getenv('OPENAI_API_KEY')
+openai.api_key = os.getenv('OPENAI_API_KEY')
 completion = openai.Completion()
 
 start_sequence = "\nSyndrum:"
 restart_sequence = "\n\nPerson"
-session_prompt = "The following is a story of sahani, just in age 17 she started a affair with Sayuru.And now after 5 years they are very lovely couple and sayuru become a software engineer and sahani became a agricultural sciencist. So what is going on with them?"
-
+session_prompt = ""
 def write_story(session_story=None):
     if session_story == None: 
         prompt_text = session_prompt
