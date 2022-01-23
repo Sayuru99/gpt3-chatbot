@@ -5,7 +5,8 @@ import os
 import openai
 
 load_dotenv()
-openai.api_key = os.getenv('OPENAI_API_KEY')
+#openai.api_key = os.getenv('OPENAI_API_KEY')
+openai.api_key = "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"
 completion = openai.Completion()
 
 start_sequence = "\nSyndrum:"
