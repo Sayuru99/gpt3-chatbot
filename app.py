@@ -1,4 +1,3 @@
-from crypt import methods
 from flask import Flask, request, session
 from twilio.twiml.messaging_response import MessagingResponse
 from syndrum import ask, append_interation_to_chat_log
